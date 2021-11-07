@@ -358,10 +358,10 @@ class FakeDataGenerator:
             input_sample = self._create_input_sample(original_sentence, values)
 
             if self.include_metadata:
+                    # "Gender": fake_pii_sample["GENDER"],
+                    # "NameSet": fake_pii_sample["NAMESET"],
+                    # "Country": fake_pii_sample["COUNTRY"],
                 metadata = {
-                    "Gender": fake_pii_sample["GENDER"],
-                    "NameSet": fake_pii_sample["NAMESET"],
-                    "Country": fake_pii_sample["COUNTRY"],
                     "Lowercase": input_sample.full_text.islower(),
                     "Template#": template_sentence_index,
                 }
