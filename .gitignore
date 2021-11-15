@@ -1,4 +1,5 @@
 model_weights/
+output
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
